@@ -7,5 +7,4 @@ steps:
     args:
       - '-c'
       - ' echo $BRANCH_NAME'
-      - ' echo $COMMIT_SHA'
-      - ' echo $(git symbolic-ref --short HEAD)'
+      - ' echo this is a test'
