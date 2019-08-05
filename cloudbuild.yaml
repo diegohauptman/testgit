@@ -4,4 +4,4 @@ steps:
     args:
       - '-c'
       - ' echo $BRANCH_NAME'
-      - ' echo $COMMIT_SHA
+      - ' echo $COMMIT_SHA'
