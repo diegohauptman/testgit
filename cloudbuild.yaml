@@ -6,5 +6,4 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $BRANCH_NAME'
-      - ' echo this is a test'
+      - ' echo $COMMIT_SHA'
