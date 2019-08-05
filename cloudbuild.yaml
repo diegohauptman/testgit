@@ -5,3 +5,4 @@ steps:
       - '-c'
       - ' echo $BRANCH_NAME'
       - ' echo $COMMIT_SHA'
+      - ' echo $(git symbolic-ref --short HEAD)'
