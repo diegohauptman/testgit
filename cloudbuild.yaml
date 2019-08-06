@@ -6,4 +6,4 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $COMMIT_SHA'
+      - ' echo $BRANCH_NAME'
