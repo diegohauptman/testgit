@@ -16,3 +16,8 @@ steps:
     args:
       - '-c'
       - ' echo Revision ID: $REVISION_ID'
+   - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - ' echo Branch Name through git command: $(git symbolic-ref --short HEAD)'
