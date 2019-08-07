@@ -5,7 +5,7 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo Branch Name: $BRANCH_NAME'
+      - ' echo Tag Name: $TAG_NAME'
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
