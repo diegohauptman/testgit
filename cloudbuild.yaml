@@ -9,3 +9,8 @@ steps:
     args:
       - '-c'
       - ' echo $COMMIT_SHA'
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - ' echo $REVISION_ID'
