@@ -3,9 +3,14 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $BRANCH_NAME'
+      - ' echo Branch Name: $BRANCH_NAME'
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $COMMIT_SHA'
+      - ' echo Commit SHA: $COMMIT_SHA'
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - ' echo Branch Name through git command: $(git symbolic-ref --short HEAD)'
