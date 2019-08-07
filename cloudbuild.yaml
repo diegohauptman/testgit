@@ -25,5 +25,5 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo Branch Name through git command contains sha: git branch -r --contains $COMMIT_SHA'
+      - ' echo Branch Name through git command contains sha: $(git branch -r --contains $COMMIT_SHA)'
 
