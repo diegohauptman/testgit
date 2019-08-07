@@ -3,14 +3,14 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $BRANCH_NAME'
+      - ' echo Branch Name: $BRANCH_NAME'
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $COMMIT_SHA'
+      - ' echo Vommit Sha: $COMMIT_SHA'
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo $REVISION_ID'
+      - ' echo Revision ID: $REVISION_ID'
