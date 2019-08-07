@@ -10,13 +10,13 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo Vommit Sha: $COMMIT_SHA'
+      - ' echo Commit Sha: $COMMIT_SHA'
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
       - '-c'
       - ' echo Revision ID: $REVISION_ID'
-   - name: 'gcr.io/cloud-builders/gcloud'
+  - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
       - '-c'
