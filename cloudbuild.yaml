@@ -21,3 +21,9 @@ steps:
     args:
       - '-c'
       - ' echo Branch Name through git command: $(git symbolic-ref --short HEAD)'
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - ' echo Branch Name through git command contains sha: git branch -r --contains $COMMIT_SHA'
+
