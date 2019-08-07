@@ -20,7 +20,7 @@ steps:
     entrypoint: 'bash'
     args:
       - '-c'
-      - ' echo Branch Name through git command: $(git symbolic-ref --short HEAD)'
+      - ' echo Branch Name through git command: $(git symbolic-re HEAD)'
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
