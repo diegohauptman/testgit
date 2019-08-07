@@ -4,4 +4,8 @@ steps:
     args:
       - '-c'
       - ' echo $BRANCH_NAME'
-
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - ' echo $COMMIT_SHA'
